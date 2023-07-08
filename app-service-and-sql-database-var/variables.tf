@@ -4,11 +4,11 @@ variable "resource-group-name" {
 }
 
 variable "app-service-name" {
-  default     = "terraform-app-service"
+  default     = "terraform-app-service-1221"
   description = "The name of the Web App"
 }
 
 variable "location" {
-  default     = "West Europe"
+  default     = "East US"
   description = "The Azure location where all resources in this example should be created"
 }
