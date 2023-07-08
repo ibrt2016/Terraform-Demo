@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "RG-Terraform" {
   name     = "terraform-resource-group"
-  location = "West Europe"
+  location = "East US"
 }
 
 resource "azurerm_app_service_plan" "ASP-TerraForm" {
@@ -37,7 +37,7 @@ resource "azurerm_app_service" "AS-Terraform" {
 }
 
 resource "azurerm_sql_server" "test" {
-  name                         = "terraform-sqlserver"
+  name                         = "terraform-sqlserver-1221"
   resource_group_name          = azurerm_resource_group.RG-Terraform.name
   location                     = azurerm_resource_group.RG-Terraform.location
   version                      = "12.0"
